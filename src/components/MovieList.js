@@ -13,7 +13,7 @@ function MovieList({ movies }) {
             {movies.map(movie => (
                 <Link key={movie.imdbID} to={`/movie/${movie.imdbID}`}>
                 <div className="mb-8 w-90 text-center tranform transition duration-500 hover: scale-90 rounded-md overflow-hidden">
-                    <img src={movie.Poster} className="w-full h-96" />
+                    <img src={movie.Poster} alt="movie poster" className="w-full h-96" />
                     <div className="bg-slate-500 py-4">
                         <h1 className="text-2xl">{movie.Title}</h1>
                         <h3 className="text-2xl">{movie.Year}</h3>

@@ -1,13 +1,13 @@
 
 import './App.css';
 import { useState, useEffect, useCallback } from "react"
-import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import SearchBar from "./components/SearchBar";
 import FilterDropdown from "./components/FilterDropdown";
 import MovieDetail from "./components/MovieDetail";
 import MovieList from "./components/MovieList";
-import Favoruite from "./components/Favoruite";
+// import Favoruite from "./components/Favoruite";
 
 import { SearchMovie } from "./api";
 
@@ -17,7 +17,7 @@ const[movies, setMovies] = useState([]); //statae to store the movies fetch from
 const[error, setError] = useState(null); //error messages during the api call
 const[loading, setLoading] = useState(true);
 const[filter, setFilter] = useState(""); //filter applied to the movie list
-const[favourite, setFavourite] = useState([]);
+// const[favourite, setFavourite] = useState([]);
 const[currentPage, setCurrentPage] = useState(1)  
 const moviesPerPage = 2;
 

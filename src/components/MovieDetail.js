@@ -36,7 +36,7 @@ function MovieDetail() {
 
         return (
             <div className="flex p-4">
-                <img src={movie.Poster} className="mr-10" />
+                <img src={movie.Poster} alt="movie poster" className="mr-10" />
                 <div className="mt-4 ms-4">
                     <h1 className="text-4xl">{movie.Title}</h1>
                     <h3 className="text-2xl mt-4">Year: <span
